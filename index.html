@@ -16,8 +16,142 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     body {
-      background-color: hsl(330, 100%, 98%);
+      background-color: hsl(30, 54%, 90%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
     }
+    .Recipe_Card {
+      background-color: white;
+      border-radius: 20px;
+      width: 660px;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      margin: 20px;
+    }
+    img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    h1 {
+      font-family: "Young Serif",sans-serif;
+      font-weight: 400;
+    }
+
+    p {
+      font-family: "Outfit",sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      margin: 0 0 30px 0;
+    }
+
+    .Pink_Card {
+      background-color: hsl(330, 100%, 98%);
+      padding: 0 30px;
+      border-radius: 10px;
+    }
+    .Pink_Card h3 {
+      font-family: "Outfit",sans-serif;
+      color: hsl(332, 51%, 32%);
+      font-weight: 600;
+    }
+
+  .Pink_Card ul {
+    color: hsl(332, 51%, 32%);
+    line-height: 40px;
+    padding: 0 20px;
+  }
+
+  .Pink_Card ul li a {
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit",sans-serif;
+    font-weight: 400;
+    
+  }
+
+  h2 {
+    font-family: "Young Serif",sans-serif;
+    font-weight: 200;
+    color: hsl(14, 45%, 36%);
+  }
+
+  .Ingredients_list ul {
+    color: hsl(14, 45%, 36%);
+    line-height: 40px;
+    padding: 0 20px;
+  }
+
+  .Ingredients_list ul li a {
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit",sans-serif;
+    font-weight: 400;
+    
+  }
+
+  hr {
+    margin: 20px 0;
+  }
+  .Instructions_list h2 {
+    margin: 0;
+  }
+
+  .Instructions_list ol {
+    color: hsl(14, 45%, 36%);
+    line-height: 16px;
+    font-weight: bold;
+    font-family: "Outfit",sans-serif;
+    padding: 10px 20px;
+  }
+
+  .Instructions_list ol li a {
+    color: hsl(30, 10%, 34%);
+    font-family: "Outfit",sans-serif;
+    font-weight: 400;
+    
+    
+  }
+  .Instructions_list ol li {
+    padding: 10px;
+  }
+  .Nutrition_title h2 {
+    margin: 0;
+  }
+  .Nutrition_title p {
+    padding: 20px 0;
+    margin: 0;
+  }
+
+  .line_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .Nutrition_list_name ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    
+    font-family: "Outfit",sans-serif;
+  }
+  
+
+  .line_list ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .line_list_size ul {
+    list-style: none;
+    display: flex;
+    color: hsl(14, 45%, 36%);
+    justify-content: center;
+    flex-direction: row;
+  }
 
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -25,14 +159,16 @@
 </head>
 <body>
 
+  <div class="Recipe_Card">
+
   <div class="Main_image">
   <img src="assets/images/image-omelette.jpeg" alt="image-omelette">
   </div>
   
-  <div class="Recpe_header">
+  <div class="Recipe_header">
   <h1>Simple Omelette Recipe</h1>
 
-  <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+  <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs <br> cooked 
     to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
   </div>
 
@@ -40,9 +176,9 @@
   <h3>Preparation time</h3>
 
   <ul>
-    <li><b>Total:</b> Approximately 10 minutes</li>
-    <li><b>Preparation:</b> 5 minutes</li>
-    <li><b>Cooking:</b> 5 minutes</li>
+    <li><a><b>Total:</b> Approximately 10 minutes</a></li>
+    <li><a><b>Preparation:</b> 5 minutes</a></li>
+    <li><a><b>Cooking:</b> 5 minutes</a></li>
   </ul>
   </div>
   
@@ -50,34 +186,35 @@
   <div class="Ingredients_list">
   <h2>Ingredients</h2>
     <ul>
-      <li>2-3 large eggs</li>
-      <li>Salt, to taste</li>
-      <li>Pepper, to taste</li>
-      <li>1 tablespoon of butter or oil</li>
-      <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      <li><a>2-3 large eggs</a></li>
+      <li><a>Salt, to taste</a></li>
+      <li><a>Pepper, to taste</a></li>
+      <li><a>1 tablespoon of butter or oil</a></li>
+      <li><a>Optional fillings: cheese, diced vegetables, cooked meats, herbs</a></li>
     </ul>
-  </div>
     <hr>
+  </div>
+    
 
     <div class="Instructions_list">
   <h2>Instructions</h2>
 
     <ol>
-      <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are<br>well mixed. 
-        You can add a tablespoon of water or milk for a fluffier texture.</li>
-      <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</li>
-      <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-        the eggs evenly coat the surface.</li>
-      <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
-        middle, sprinkle your chosen fillings over one half of the omelette.</li>
-      <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
-        fillings. Let it cook for another minute, then slide it onto a plate.</li>
-      <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+      <li><a><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are<br> well mixed. 
+        You can add a tablespoon of water or milk for a fluffier texture.</a></li>
+      <li><a><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.</a></li>
+      <li><a><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the <br> pan to ensure 
+        the eggs evenly coat the surface.</a></li>
+      <li><a><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the 
+        middle, sprinkle your chosen fillings over one half of the omelette.</a></li>
+      <li><a><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the 
+        fillings. Let it cook for another minute, then slide it onto a plate.</a></li>
+      <li><a><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</a></li>
     </ol>
-  
+    <hr>
     </div>
 
-    <hr>
+    
 
     <div class="Nutrition_title">
   
@@ -87,27 +224,64 @@
 
     </div>
 
-    <div class="Nutrition_list">
+    <div class="Nutrition_list_name">
+  <div class="line_list">
   <ul>
-    <li>Calories</li>
-    <li>277kcal</li>
+    <li><a>Calories</a></li>
   </ul>
+</div>
+<div class="line_list_size">
   <ul>
-    <li>Carbs</li>
-    <li>0g</li>
+    <li><a><b>277kcal</b></a></li>
   </ul>
-  <ul>
-    <li>Protein</li>
-    <li>20g</li>
-  </ul>
-  <ul>
-    <li>Fat</li>
-    <li>22g</li>
-  </ul>
+</div>
+  <hr>
+  </div>
+  <div class="Nutrition_list_name">
+  <div class="line_list">
+    <ul>
+      <li><a>Carbs</a></li>
+    </ul>
     </div>
+    <div class="line_list_size">
+      <ul>
+        <li><a><b>0g</b></a></li>
+      </ul>
+    </div>
+  <hr>
+  </div>
+  <div class="Nutrition_list_name">
+  <div class="line_list">
+    <ul>
+      <li><a>Protein</a></li>
+    </ul>
+    </div>
+    <div class="line_list_size">
+      <ul>
+        <li><a><b>20g</b></a></li>
+      </ul>
+      </div>
+      <hr>
+      </div>
+
+  
+  <div class="Nutrition_list_name">
+  <div class="line_list">
+    <ul>
+      <li><a>Fat</a></li>
+    </ul>
+    </div>
+    <div class="line_list_size">
+      <ul>
+        <li><a><b>22g</b></a></li>
+      </ul>
+      </div>
+    </div>
+      </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="#">Louckoom</a>.
+</div>
 </body>
 </html>
